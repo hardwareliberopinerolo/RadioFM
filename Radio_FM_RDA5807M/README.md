@@ -14,9 +14,10 @@ E' stata utilizzata la seguente libreria Arduino per la Radio FM RDA5807M
 [http://mathertel.github.io/Radio/](http://mathertel.github.io/Radio/)
 
 
-Nella cartella [Arduino Code](/Arduino_Code) è presente lo sketch Arduino in corso di sviluppo
+Nella cartella [Arduino Code](/Radio_FM_RDA5807M/Arduino_Code) è presente lo sketch Arduino in corso di sviluppo
 
 
-/Arduino_Code
+
+
 
 
