@@ -30,4 +30,3 @@ void Gestione_Seriale(void){
 
 } //end----Gestione Seriale---------------------------------------------
   
-

@@ -11,13 +11,13 @@ void setup(){
   lcd.clear();
   lcd.setCursor(0,0);
 //-----------------------------
-  delay(100);
+  delay(5000);
   
 // Initialize the Radio 
   radio.init();
 // Enable information to the Serial port
-  radio.debugEnable();
-//  radio.debugRegisters();
+  //radio.debugEnable();
+//radio.debugRegisters();
 // Configurazione Volume 
   radio.setMono(false);
   radio.setMute(false);
@@ -26,6 +26,8 @@ void setup(){
 
 //---Legge frequenza dalla eeprom
 	Legge_eeprom_frequenza();
+//numero_int=10480;
+
 
 //Initialize the radio to the West-FM band. The mode will set the proper receiver bandwidth
 // configura la frequenza di accensione
@@ -33,6 +35,7 @@ void setup(){
   delay (100);
   vis_frequenza();
   vis_rssi();
+  //vis_radio();
 
 // setup the information chain for RDS data.
   radio.attachReceiveRDS(RDS_process);
@@ -41,5 +44,7 @@ void setup(){
 //---Configura conteggi per pulsanti
   t_prec_PU1=millis();
   //t_prec_PU2=millis();
+
+  t_prec_vis=millis();
 
 } //end--------------Setup-----------------------------------------

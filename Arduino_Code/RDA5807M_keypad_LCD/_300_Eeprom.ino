@@ -6,6 +6,8 @@ void Legge_eeprom_frequenza(void){
   delay(30);
   numero_int=EE_alto*256+EE_basso;
     delay (30);
+ Serial.print("Frequenza letta da eeprom: ");
+ Serial.println(numero_int);
 }
 //end--------------------------------
 
@@ -17,5 +19,7 @@ void Salva_eeprom_frequenza(void){
       EE_basso=numero-EE_alto*256;
       EEPROM.write(11,EE_basso);
       delay(30);
+      Serial.print("Frequenza salvata in eeprom: "); 
+      Serial.println(numero);
 }
 //end--------------------------------
